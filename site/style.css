@@ -588,3 +588,6 @@ select{max-width:100%;width:100%;text-overflow:ellipsis}
 .timeline.trail li{padding-bottom:26px}
 @media (prefers-reduced-motion:reduce){.timeline.trail:before{animation:none}}
 .og-dep[hidden]{display:none}
+/* Así es la ruta */
+.tsec.exp p{margin:0 0 12px;max-width:62ch}
+.tsec.exp .exp-note{background:var(--cream);border-left:3px solid var(--green);padding:12px 16px;border-radius:0 10px 10px 0;margin-top:16px}
