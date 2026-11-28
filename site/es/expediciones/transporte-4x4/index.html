@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#1E3A2B">
 <link rel="apple-touch-icon" href="../../../apple-touch-icon.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristTrip", "name": "Transporte en 4x4", "description": "Jeep 4x4 con conductor local para las vías destapadas hasta el inicio de las caminatas, como La Piñuela – La Vega.", "url": "https://wildercocorna.com/es/expediciones/transporte-4x4/", "image": "https://wildercocorna.com/img/jeep-4x4.webp", "touristType": "Transporte", "provider": {"@id": "https://wildercocorna.com/#org"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://wildercocorna.com/es/"}, {"@type": "ListItem", "position": 2, "name": "Expediciones", "item": "https://wildercocorna.com/es/expediciones/"}, {"@type": "ListItem", "position": 3, "name": "Transporte en 4x4"}]}</script>
 <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
-<link rel="preload" href="../../../fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../../../fonts/source-serif-4-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="../../../style.css?v=284f3d30"></head>
+<link rel="preload" href="../../../fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../../../fonts/source-serif-4-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="../../../style.css?v=767d15f8"></head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-header" id="top"><div class="wrap bar">
@@ -43,7 +43,7 @@
  </div>
 </section>
 <section class="band"><div class="wrap section"><div class="between"><h2>Otras experiencias</h2><a class="link" href="../../expediciones/">Ver todas →</a></div>
-<div class="tiles"><a class="tile" href="../../expediciones/paseo-en-chiva/"><img src="../../../img/chivas-cocorna.webp" alt="Viajero mirando las montañas desde una chiva" loading="lazy">
+<div class="tiles"><a class="tile" href="../../expediciones/paseo-en-chiva/"><img src="../../../img/chivas-cocorna.webp" alt="Viajero mirando las montañas desde una chiva" loading="eager" fetchpriority="high">
 <span class="info"><span class="meta">Medio día</span><h3>Paseo en chiva</h3><span class="meta">Cocorná, Antioquia</span>
 <span class="price"><span>Lo organizamos por ti</span><span>→</span></span></span></a><a class="tile" href="../../expediciones/bus-6-personas/"><img src="../../../img/cocorna-valle.webp" alt="Pueblo de Cocorná entre montañas" loading="lazy">
 <span class="info"><span class="meta">Hasta 6 personas</span><h3>Van privada</h3><span class="meta">Cocorná, Antioquia</span>
@@ -86,4 +86,5 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 document.querySelectorAll('.rv').forEach(function(e){io.observe(e);});})();
 </script>
 <script>addEventListener("scroll",function(){document.body.classList.toggle("scrolled",scrollY>500)},{passive:true})</script>
+<script id="r5js">(function(){var last;document.addEventListener("click",function(e){last=e.target.closest?e.target.closest("a"):null},true);addEventListener("pageswap",function(e){if(!e.viewTransition||!last)return;var c=last.closest(".tile,.tcard,.rcard,.teaser")||last;var i=c.querySelector("img");if(i){i.style.viewTransitionName="hero-img";e.viewTransition.finished.then(function(){i.style.viewTransitionName=""})}});var f=document.querySelectorAll("form,.cta,.site-footer,.og");if("IntersectionObserver"in window&&f.length){var on=new Set();var io=new IntersectionObserver(function(es){es.forEach(function(x){x.isIntersecting?on.add(x.target):on.delete(x.target)});document.body.classList.toggle("wa-hide",on.size>0)});f.forEach(function(el){io.observe(el)})}})()</script>
 </body></html>
