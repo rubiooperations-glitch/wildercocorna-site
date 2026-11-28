@@ -261,3 +261,20 @@ html[lang=en] .hero h1{font-size:clamp(32px,3.9vw,54px)}
 img{height:auto}
 .getthere .hroute{margin:4px 0 8px}
 .getthere .link{align-self:flex-start}
+/* jury r6 */
+.link{background:repeating-linear-gradient(90deg,currentColor 0 6px,transparent 6px 10px) 0 100%/0 2px no-repeat;padding-bottom:3px;transition:background-size .45s var(--ease-out),color .25s}
+.link:hover{background-size:100% 2px;color:var(--accent)}
+.ar{display:inline-block;transition:transform .3s var(--ease-out)}
+a:hover .ar{transform:translateX(6px)}
+a.teaser:hover img{transform:scale(1.08)}
+a.teaser:hover .teaser-h{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.lockup:hover svg{transform:translateY(-3px) rotate(-6deg) scale(1.08)}
+.lockup:hover .wordmark{color:var(--accent);transition:color .25s}
+.ts-pt em:empty{display:none}
+.trail-seg.tsx{height:clamp(70px,7vw,110px)}
+@media (max-width:760px){
+ .trail-seg .ts-draw,.timeline.trail:before,.rc-trail,.rc-pt.e:before{animation:none!important;stroke-dashoffset:0;transform:none}
+ .ts-pt{animation:none!important;opacity:1;translate:none}
+ .rc-line *{animation:none!important}
+}
+@media (max-width:760px){.rc-trail:after,.hr-d:before,.rc-trail:before{animation:none!important}}
